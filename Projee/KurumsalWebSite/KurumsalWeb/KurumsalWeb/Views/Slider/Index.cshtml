@@ -1,0 +1,61 @@
+﻿@model IEnumerable<KurumsalWeb.Models.Model.Slider>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable(
+            {
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+                }
+            });
+    });
+</script>
+
+<h2>Slider</h2>
+
+<p>
+    <a href="/Slider/Create/" class="btn btn-default">Yeni Slide Ekle</a>
+</p>
+<table class="table table-striped" id="myTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Baslik)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aciklama)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ResimURL)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Baslik)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Aciklama)
+                </td>
+                <td>
+                    <img src="@item.ResimURL" width="200" height="150" />
+                </td>
+                <td>
+                    @Html.ActionLink("Güncelle", "Edit", new { id = item.SliderId }) |
+                    @Html.ActionLink("Detay", "Details", new { id = item.SliderId }) |
+                    @Html.ActionLink("Sil", "Delete", new { id = item.SliderId })
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

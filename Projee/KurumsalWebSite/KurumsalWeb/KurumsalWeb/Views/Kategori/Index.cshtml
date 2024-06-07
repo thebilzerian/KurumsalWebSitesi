@@ -1,0 +1,55 @@
+﻿@model IEnumerable<KurumsalWeb.Models.Model.Kategori>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable(
+            {
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+                }
+            });
+    });
+</script>
+
+<h2>Kategoriler</h2>
+
+<p>
+    @Html.ActionLink("Yeni Oluştur", "Create")
+</p>
+<table class="table" id="myTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.KategoriAd)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KategoriAciklama)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KategoriAd)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.KategoriAciklama)
+                </td>
+                <td>
+                    @Html.ActionLink("Güncelle", "Edit", new { id = item.KategoriId }) |
+                    @Html.ActionLink("Detay", "Details", new { id = item.KategoriId }) |
+                    @Html.ActionLink("Sil", "Delete", new { id = item.KategoriId })
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

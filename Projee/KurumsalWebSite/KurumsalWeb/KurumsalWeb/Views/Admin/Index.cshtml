@@ -1,0 +1,76 @@
+﻿@model IEnumerable<KurumsalWeb.Models.Model.Kategori>
+@{
+    ViewBag.Title = "Admin Ana Sayfa";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<style>
+    .info-box .title a {
+        color: inherit; /* Link rengini ebeveyn elemanın rengini miras alacak şekilde ayarlar */
+        text-decoration: none; /* Alt çizgiyi kaldırır */
+    }
+
+        .info-box .title a:hover {
+            color: #00f; /* Linkin üzerine gelindiğinde mavi renk yapar, istediğiniz rengi seçebilirsiniz */
+            text-decoration: underline; /* Linkin üzerine gelindiğinde alt çizgiyi ekler */
+        }
+</style>
+
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <div class="info-box blue-bg">
+            <i class="fa fa-cloud-download"></i>
+            <div class="count">@ViewBag.BlogSay</div>
+            <div class="title">
+                <a href="/Blog/Index">Blog Yazısı</a>
+            </div>
+        </div>
+        <!--/.info-box-->
+    </div>
+    <!--/.col-->
+
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <div class="info-box brown-bg">
+            <i class="fa fa-shopping-cart"></i>
+            <div class="count">@ViewBag.KategoriSay</div>
+            <div class="title">
+                <a href="/Kategori/Index">Kategori</a>
+            </div>
+        </div>
+        <!--/.info-box-->
+    </div>
+    <!--/.col-->
+
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <div class="info-box dark-bg">
+            <i class="fa fa-thumbs-o-up"></i>
+            <div class="count">@ViewBag.HizmetSay</div>
+            <div class="title">
+                <a href="/Hizmet/Index">Hizmetler</a>
+            </div>
+        </div>
+    </div>
+
+    <!--/.col-->
+
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+        <div class="info-box green-bg">
+            <i class="fa fa-cubes"></i>
+            <div class="count">@ViewBag.YorumSay</div>
+            <div class="title">
+                <a href="/Yorum/Index">Yorumlar</a>
+            </div>
+        </div>
+        <!--/.info-box-->
+    </div>
+    <!--/.col-->
+
+</div>
+
+    <div class="text-right">
+        <div class="credits">
+            2024 &copy; Designed by <a href="#">Talha Bayram Uzunpınar</a>
+        </div>
+    </div>

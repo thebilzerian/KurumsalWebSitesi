@@ -1,0 +1,79 @@
+﻿﻿
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Sifremi Unuttum - Admin</title>
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="/Content/AdminLayout/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap theme -->
+    <link href="/Content/AdminLayout/css/bootstrap-theme.css" rel="stylesheet">
+    <!--external css-->
+    <!-- font icon -->
+    <link href="/Content/AdminLayout/css/elegant-icons-style.css" rel="stylesheet" />
+    <link href="/Content/AdminLayout/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- full calendar css-->
+    <link href="/Content/AdminLayout/assets/fullcalendar/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+    <link href="/Content/AdminLayout/assets/fullcalendar/fullcalendar/fullcalendar.css" rel="stylesheet" />
+    <!-- easy pie chart-->
+    <link href="/Content/AdminLayout/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="/Content/AdminLayout/css/owl.carousel.css" type="text/css">
+    <link href="/Content/AdminLayout/css/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="/Content/AdminLayout/css/fullcalendar.css">
+    <link href="/Content/AdminLayout/css/widgets.css" rel="stylesheet">
+    <link href="/Content/AdminLayout/css/style.css" rel="stylesheet">
+    <link href="/Content/AdminLayout/css/style-responsive.css" rel="stylesheet" />
+    <link href="/Content/AdminLayout/css/xcharts.min.css" rel=" stylesheet">
+    <link href="/Content/AdminLayout/css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div>
+        <p class="alert alert-info">@ViewBag.Uyari</p>
+        <form action="/Admin/SifremiUnuttum/" method="post">
+            <div class="form-horizontal container">
+
+                <hr />
+
+                <div class="form-group">
+
+                    <div class="col-md-10">
+                        <input type="email" class="form-control" name="eposta" required placeholder="E posta adresiniz" />
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Şifremi Mail Olarak Gönder" class="btn btn-default" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <a href="/yonetimpaneli/giris/"> Yönetim Paneline Giriş</a>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+
+    </div>
+
+
+
+
+</body>
+</html>

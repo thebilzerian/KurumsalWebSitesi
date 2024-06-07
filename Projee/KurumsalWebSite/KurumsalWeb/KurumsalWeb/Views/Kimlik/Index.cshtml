@@ -1,0 +1,72 @@
+﻿@model IEnumerable<KurumsalWeb.Models.Model.Kimlik>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable(
+            {
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+                }
+            });
+    });
+</script>
+<h2>Site Kimlik Sayfası</h2>
+<p>
+    @Html.ActionLink("Yeni Ekle", "Create")
+</p>
+<table class="table table-bordered table-striped table-responsive-sm" id="myTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Keywords)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descriptions)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LogoURL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Unvan)
+            </th>
+            <th>
+                İşlemler
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Keywords)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descriptions)
+                </td>
+                <td>
+                    <img class="img-responsive" src="@item.LogoURL" width="300" height="200" />
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Unvan)
+                </td>
+                <td>
+                    @Html.ActionLink("Güncelle", "Edit", new { id = item.KimlikId })
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

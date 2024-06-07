@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\Projee\\KurumsalWebSite\\KurumsalWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9B4CBBF2-E636-4CF3-8E01-3328300A396D}|KurumsalWeb\\KurumsalWeb.csproj|c:\\users\\pc\\desktop\\projee\\kurumsalwebsite\\kurumsalweb\\kurumsalweb\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B4CBBF2-E636-4CF3-8E01-3328300A396D}|KurumsalWeb\\KurumsalWeb.csproj|solutionrelative:kurumsalweb\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B4CBBF2-E636-4CF3-8E01-3328300A396D}|KurumsalWeb\\KurumsalWeb.csproj|c:\\users\\pc\\desktop\\projee\\kurumsalwebsite\\kurumsalweb\\kurumsalweb\\views\\admin\\sifremiunuttum.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B4CBBF2-E636-4CF3-8E01-3328300A396D}|KurumsalWeb\\KurumsalWeb.csproj|solutionrelative:kurumsalweb\\views\\admin\\sifremiunuttum.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B4CBBF2-E636-4CF3-8E01-3328300A396D}|KurumsalWeb\\KurumsalWeb.csproj|c:\\users\\pc\\desktop\\projee\\kurumsalwebsite\\kurumsalweb\\kurumsalweb\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9B4CBBF2-E636-4CF3-8E01-3328300A396D}|KurumsalWeb\\KurumsalWeb.csproj|solutionrelative:kurumsalweb\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Projee\\KurumsalWebSite\\KurumsalWeb\\KurumsalWeb\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "KurumsalWeb\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Projee\\KurumsalWebSite\\KurumsalWeb\\KurumsalWeb\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "KurumsalWeb\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAwGwAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T15:03:17.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Projee\\KurumsalWebSite\\KurumsalWeb\\KurumsalWeb\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "KurumsalWeb\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Projee\\KurumsalWebSite\\KurumsalWeb\\KurumsalWeb\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "KurumsalWeb\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAC4AAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T15:00:32.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SifremiUnuttum.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Projee\\KurumsalWebSite\\KurumsalWeb\\KurumsalWeb\\Views\\Admin\\SifremiUnuttum.cshtml",
+              "RelativeDocumentMoniker": "KurumsalWeb\\Views\\Admin\\SifremiUnuttum.cshtml",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\Projee\\KurumsalWebSite\\KurumsalWeb\\KurumsalWeb\\Views\\Admin\\SifremiUnuttum.cshtml",
+              "RelativeToolTip": "KurumsalWeb\\Views\\Admin\\SifremiUnuttum.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T15:00:07.888Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
